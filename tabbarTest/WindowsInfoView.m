@@ -73,7 +73,7 @@
 
 - (IBAction)onClose:(id)sender
 {
-    [self hiddenWindowsView];
+    [self hiddenWindowsView];    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
