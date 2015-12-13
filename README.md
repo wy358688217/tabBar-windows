@@ -14,15 +14,15 @@
 
 
 for English:
-This is my little functional test Demo
-This project tabbar code from Kevin
-Some people I am very lazy to write at the beginning of the tabbar
-And then find the source code in GitHub
-Thanks to Kevin for the source code
-After I have to add some code to achieve a small functional test
-Is a function of loading on Windows view flexible appearance and disappearance of course is very simple realization of complex data in
+This is my little functional test Demo.
+This project tabbar code from Kevin.
+Some people I am very lazy to write at the beginning of the tabbar.
+And then find the source code in GitHub.
+Thanks to Kevin for the source code.
+After I have to add some code to achieve a small functional test.
+Is a function of loading on Windows view flexible appearance and disappearance of course is very simple realization of complex data in.
 This project will be used as a test project.
-If you are interested in testing your small function to add a note to the good
+If you are interested in testing your small function to add a note to the good.
 
 
 tabBar——windows
