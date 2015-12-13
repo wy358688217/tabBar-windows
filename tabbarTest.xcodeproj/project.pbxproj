@@ -37,6 +37,7 @@
 		0AABD68B1737B04C009E541D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6891737B04C009E541D /* SecondViewController.xib */; };
 		21E694291C1D689F004E8D36 /* WindowsInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E694281C1D689F004E8D36 /* WindowsInfoView.m */; };
 		21E6942B1C1D68C6004E8D36 /* WindowsInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E6942A1C1D68C6004E8D36 /* WindowsInfoView.xib */; };
+		21E6942E1C1D9993004E8D36 /* WindowsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6942D1C1D9993004E8D36 /* WindowsViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		21E694271C1D689F004E8D36 /* WindowsInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsInfoView.h; sourceTree = "<group>"; };
 		21E694281C1D689F004E8D36 /* WindowsInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsInfoView.m; sourceTree = "<group>"; };
 		21E6942A1C1D68C6004E8D36 /* WindowsInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowsInfoView.xib; sourceTree = "<group>"; };
+		21E6942C1C1D9993004E8D36 /* WindowsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsViewModel.h; sourceTree = "<group>"; };
+		21E6942D1C1D9993004E8D36 /* WindowsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				21E694271C1D689F004E8D36 /* WindowsInfoView.h */,
 				21E694281C1D689F004E8D36 /* WindowsInfoView.m */,
 				21E6942A1C1D68C6004E8D36 /* WindowsInfoView.xib */,
+				21E6942C1C1D9993004E8D36 /* WindowsViewModel.h */,
+				21E6942D1C1D9993004E8D36 /* WindowsViewModel.m */,
 				0AABD64A1737925F009E541D /* Supporting Files */,
 			);
 			path = tabbarTest;
@@ -271,6 +276,7 @@
 				0AABD6501737925F009E541D /* main.m in Sources */,
 				0AABD6541737925F009E541D /* tabbarAppDelegate.m in Sources */,
 				0AABD65D1737925F009E541D /* tabbarViewController.m in Sources */,
+				21E6942E1C1D9993004E8D36 /* WindowsViewModel.m in Sources */,
 				0AABD66817379315009E541D /* tabbarView.m in Sources */,
 				0AABD6851737B034009E541D /* FirstViewController.m in Sources */,
 				0AABD68A1737B04C009E541D /* SecondViewController.m in Sources */,
