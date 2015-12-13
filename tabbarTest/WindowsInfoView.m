@@ -2,6 +2,7 @@
 //  WindowsInfoView.m
 //  tabbarTest
 //
+//  This is my class and another is not
 //  Created by wang on 15/12/13.
 //  Copyright © 2015年 Kevin. All rights reserved.
 //
