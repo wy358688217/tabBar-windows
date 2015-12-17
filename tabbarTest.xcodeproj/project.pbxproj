@@ -38,6 +38,7 @@
 		F93EF32D1C22601300317AC3 /* WindowsInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF3281C22601300317AC3 /* WindowsInfoView.m */; };
 		F93EF32E1C22601300317AC3 /* WindowsInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93EF3291C22601300317AC3 /* WindowsInfoView.xib */; };
 		F93EF32F1C22601300317AC3 /* WindowsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF32B1C22601300317AC3 /* WindowsViewModel.m */; };
+		F93EF3371C22688800317AC3 /* EasyObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF3361C22688800317AC3 /* EasyObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,8 @@
 		F93EF32B1C22601300317AC3 /* WindowsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsViewModel.m; sourceTree = "<group>"; };
 		F93EF3311C22643800317AC3 /* tabbarTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "tabbarTest-Info.plist"; sourceTree = "<group>"; };
 		F93EF3321C22643800317AC3 /* tabbarTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tabbarTest-Prefix.pch"; sourceTree = "<group>"; };
+		F93EF3351C22688800317AC3 /* EasyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyObserver.h; sourceTree = "<group>"; };
+		F93EF3361C22688800317AC3 /* EasyObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 		0AABD6491737925F009E541D /* tabbarTest */ = {
 			isa = PBXGroup;
 			children = (
+				F93EF3341C22684400317AC3 /* SimpleTools */,
 				F93EF3301C22643800317AC3 /* util */,
 				F93EF3261C22601300317AC3 /* WindowsView */,
 				F93EF2EC1C22600200317AC3 /* AppDelegate */,
@@ -235,6 +239,15 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		F93EF3341C22684400317AC3 /* SimpleTools */ = {
+			isa = PBXGroup;
+			children = (
+				F93EF3351C22688800317AC3 /* EasyObserver.h */,
+				F93EF3361C22688800317AC3 /* EasyObserver.m */,
+			);
+			path = SimpleTools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,6 +343,7 @@
 				F93EF30D1C22600200317AC3 /* tabbarView.m in Sources */,
 				0AABD6501737925F009E541D /* main.m in Sources */,
 				F93EF30E1C22600200317AC3 /* FirstViewController.m in Sources */,
+				F93EF3371C22688800317AC3 /* EasyObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

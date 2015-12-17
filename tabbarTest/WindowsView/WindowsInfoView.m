@@ -8,48 +8,47 @@
 //
 
 #import "WindowsInfoView.h"
+#import "EasyObserver.h"
 
 @interface WindowsInfoView ()
 @property (weak, nonatomic) IBOutlet UIView *effectView;
 @end
 
 @implementation WindowsInfoView
+{
+    EasyObserver * _mpEasyObserver;
+}
 
 - (void)awakeFromNib
 {
     self.hidden = NO;
-    [self registerObserver:kWindowsViewWillShow];
-    [self registerObserver:kWindowsViewWillHidden];
+    
+    [self registerObserver];
 }
 
 - (void)dealloc
 {
-    [self removeObserver:kWindowsViewWillShow];
-    [self removeObserver:kWindowsViewWillHidden];
+    [_mpEasyObserver shutDown];
+    SAFE_RELEASE(_mpEasyObserver);
 }
 
-- (void)registerObserver:(NSString *)noticationName
+- (void)registerObserver
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handNotification:)
-                                                 name:noticationName
-                                               object:nil];
-}
-
-- (void)removeObserver:(NSString *)noticationName
-{
-    [self removeObserver:self forKeyPath:noticationName];
-}
-
-- (void)handNotification:(NSNotification *)notetication
-{
-    if ([notetication.name isEqualToString:kWindowsViewWillHidden]) {
-        [self hiddenWindowsView];
+    if (_mpEasyObserver) {
         return;
     }
-    if ([notetication.name isEqualToString:kWindowsViewWillShow]) {
-        [self showWindowsView];
-    }
+    _mpEasyObserver = [[EasyObserver alloc] init];
+    WEAK_BLOCK_OBJECT(self);
+    [_mpEasyObserver startUpListen:^(NSNotification * notiofication) {
+        BLOCK_OBJECT(self);
+        if ([notiofication.name isEqualToString:kWindowsViewWillHidden]) {
+            [weak_self hiddenWindowsView];
+            return;
+        }
+        if ([notiofication.name isEqualToString:kWindowsViewWillShow]) {
+            [weak_self showWindowsView];
+        }
+    } withList:@[kWindowsViewWillShow,kWindowsViewWillHidden]];
 }
 
 - (void)showWindowsView
