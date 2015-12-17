@@ -11,8 +11,9 @@
 此工程也将作为本人的测试工程 
 
 如果你有兴趣测试你的小功能 可以添加  说明就好  欢迎指点 
+
 以下规范值得注意的是：
-自己每增加一个功能，希望你另起一个你的 唯一文件夹进行说明或者模块说明
+自己每增加一个功能，希望你另起一个你的 唯一文件夹进行说明或者模块说明。就好像C++里面的命名空间一样
 
 
 for English:
@@ -27,6 +28,7 @@ This project will be used as a test project.
 If you are interested in testing your small function to add a note to the good.
 
 The following specification is worth noting:
-Each additional function of your own, I hope you have another one of your only folders for instructions or modules
+Each additional function of your own, I hope you have another one of your only folders for instructions or modules。
+such as the namespace of C/C++
 
 tabBar——windows
