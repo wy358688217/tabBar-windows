@@ -84,6 +84,8 @@
 #define kOneDay                 (24*60*60)
 
 #define ScreenRatio             (float)((SCREEN_WIDTH)/320)
+#define NotificationCenter      [NSNotificationCenter defaultCenter]
+
 
 #ifdef _DEBUG
 #define PPAssert(condition,msg) if (!(condition)) { \

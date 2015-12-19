@@ -51,8 +51,7 @@
 
 - (IBAction)onPopWindows:(id)sender
 {
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    UIView * windowsView = [[UIView alloc] initWithFrame:CGRectMake(0, screenSize.height*0.4, screenSize.width, screenSize.height*0.6)];
+    UIView * windowsView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT*0.4, SCREEN_WIDTH, SCREEN_HEIGHT*0.6)];
     [windowsView setTag:0xad1000];
     windowsView.backgroundColor = [UIColor greenColor];
     

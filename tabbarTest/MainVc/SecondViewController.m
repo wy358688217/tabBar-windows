@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "WindowsInfoView.h"
+#import "UIView+Category.h"
 
 @interface SecondViewController ()
 @property(weak,nonatomic) WindowsInfoView * windowsView;
@@ -36,16 +37,15 @@
     if (self.windowsView) {
         return;
     }
-    CGRect windowsFrame = [UIScreen mainScreen].bounds;
-    self.windowsView = [[[NSBundle mainBundle] loadNibNamed:@"WindowsInfoView" owner:nil options:nil] firstObject];
-    self.windowsView.frame = CGRectMake(0, windowsFrame.size.height, self.view.frame.size.width, windowsFrame.size.height);
+    self.windowsView = [WindowsInfoView loadMainNib];
+    self.windowsView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT);
     [[[UIApplication sharedApplication].windows firstObject] addSubview:self.windowsView];
     self.windowsView.hidden = YES;
 }
 
 - (IBAction)onTouch:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kWindowsViewWillShow object:nil];
+    [NotificationCenter postNotificationName:kWindowsViewWillShow object:nil];
 }
 
 - (void)didReceiveMemoryWarning

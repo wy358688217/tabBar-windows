@@ -12,6 +12,7 @@
 		0AABD6481737925F009E541D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABD6471737925F009E541D /* CoreGraphics.framework */; };
 		0AABD64E1737925F009E541D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD64C1737925F009E541D /* InfoPlist.strings */; };
 		0AABD6501737925F009E541D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD64F1737925F009E541D /* main.m */; };
+		213A7A481C253F980057F368 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 213A7A471C253F980057F368 /* UIView+Category.m */; };
 		F93EF30C1C22600200317AC3 /* tabbarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF2EE1C22600200317AC3 /* tabbarAppDelegate.m */; };
 		F93EF30D1C22600200317AC3 /* tabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF2F01C22600200317AC3 /* tabbarView.m */; };
 		F93EF30E1C22600200317AC3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF2F31C22600200317AC3 /* FirstViewController.m */; };
@@ -53,6 +54,8 @@
 		0AABD6551737925F009E541D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0AABD6571737925F009E541D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0AABD6591737925F009E541D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		213A7A461C253F980057F368 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		213A7A471C253F980057F368 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		F93EF2ED1C22600200317AC3 /* tabbarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarAppDelegate.h; sourceTree = "<group>"; };
 		F93EF2EE1C22600200317AC3 /* tabbarAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabbarAppDelegate.m; sourceTree = "<group>"; };
 		F93EF2EF1C22600200317AC3 /* tabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarView.h; sourceTree = "<group>"; };
@@ -136,10 +139,12 @@
 		0AABD6491737925F009E541D /* tabbarTest */ = {
 			isa = PBXGroup;
 			children = (
+				218F77B11C256308008BB03B /* RubikCube */,
+				213A7A3C1C253D080057F368 /* Category */,
+				F93EF2EC1C22600200317AC3 /* AppDelegate */,
 				F93EF3341C22684400317AC3 /* SimpleTools */,
 				F93EF3301C22643800317AC3 /* util */,
 				F93EF3261C22601300317AC3 /* WindowsView */,
-				F93EF2EC1C22600200317AC3 /* AppDelegate */,
 				F93EF2F11C22600200317AC3 /* MainVc */,
 				F93EF2FB1C22600200317AC3 /* Resources */,
 				0AABD64A1737925F009E541D /* Supporting Files */,
@@ -159,6 +164,22 @@
 				0AABD6591737925F009E541D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		213A7A3C1C253D080057F368 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				213A7A461C253F980057F368 /* UIView+Category.h */,
+				213A7A471C253F980057F368 /* UIView+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		218F77B11C256308008BB03B /* RubikCube */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RubikCube;
 			sourceTree = "<group>";
 		};
 		F93EF2EC1C22600200317AC3 /* AppDelegate */ = {
@@ -343,6 +364,7 @@
 				F93EF30D1C22600200317AC3 /* tabbarView.m in Sources */,
 				0AABD6501737925F009E541D /* main.m in Sources */,
 				F93EF30E1C22600200317AC3 /* FirstViewController.m in Sources */,
+				213A7A481C253F980057F368 /* UIView+Category.m in Sources */,
 				F93EF3371C22688800317AC3 /* EasyObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

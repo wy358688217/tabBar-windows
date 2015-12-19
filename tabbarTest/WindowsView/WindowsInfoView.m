@@ -9,6 +9,7 @@
 
 #import "WindowsInfoView.h"
 #import "EasyObserver.h"
+#import "UIView+Category.h"
 
 @interface WindowsInfoView ()
 @property (weak, nonatomic) IBOutlet UIView *effectView;
@@ -55,7 +56,7 @@
 {
     self.hidden = NO;
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+        [self setZeroOrigin];
     } completion:^(BOOL finished) {
         NSLog(@"window 弹起");
     }];
@@ -64,7 +65,7 @@
 - (void)hiddenWindowsView
 {
     [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, self.frame.size.width, self.frame.size.height);
+        [self setFrameY:SCREEN_HEIGHT];
     } completion:^(BOOL finished) {
         self.hidden = YES;
         NSLog(@"window 收起");

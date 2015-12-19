@@ -1,5 +1,26 @@
 # tabBar-windows
 
+
+我要写一个用于专业魔方玩家的软件，
+包含最基本的功能计时，计次等
+其次还有网络模块实时对战，战绩荣耀系统等。
+我看到市场上都有软件，只是太杂乱，主要还是单价。
+作为魔方爱好者，我想为魔方做点啥，传播下去。
+我需要精通魔方算法的朋友以及网络模块的朋友；
+有兴趣的朋友，有想法的朋友可以联系我QQ：2037921944
+邮箱：2037921944@qq.com
+
+English:
+I want to write a professional software for cube game player,
+Contains the basic functions of timing, counting etc.
+Followed by the network module in real time, record and glory system, etc..
+I see the market have software, just too messy, mainly in the unit price.
+As the cube enthusiasts I want to do something for the cube, spread down.
+I need to be proficient in magic cube algorithm and network module friends friends;
+Interested friends, have the idea of a friend can contact me QQ:2037921944
+Email: 2037921944@qq.com
+
+／／／／／／／／／／／／／／／／／／／／／／／／／／
 这是本人的小功能测试Demo  
 本工程tabbar代码来自Kevin 
 有人本人很懒 懒得写开头的tabbar 
