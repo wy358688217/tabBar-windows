@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    return;
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
                                                  name:UIKeyboardWillShowNotification
@@ -51,6 +51,7 @@
 
 - (IBAction)onPopWindows:(id)sender
 {
+    return;
     UIView * windowsView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT*0.4, SCREEN_WIDTH, SCREEN_HEIGHT*0.6)];
     [windowsView setTag:0xad1000];
     windowsView.backgroundColor = [UIColor greenColor];
@@ -70,6 +71,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    return;
     UIWindow * window = [[UIApplication sharedApplication].windows firstObject];
     UIView * windowsView = (UIView *)[window viewWithTag:0xad1000];
     if (!windowsView) {

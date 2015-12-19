@@ -38,7 +38,6 @@
 		F93EF3221C22600200317AC3 /* tabbar_mainbtn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F93EF30B1C22600200317AC3 /* tabbar_mainbtn_bg@2x.png */; };
 		F93EF32D1C22601300317AC3 /* WindowsInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF3281C22601300317AC3 /* WindowsInfoView.m */; };
 		F93EF32E1C22601300317AC3 /* WindowsInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93EF3291C22601300317AC3 /* WindowsInfoView.xib */; };
-		F93EF32F1C22601300317AC3 /* WindowsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF32B1C22601300317AC3 /* WindowsViewModel.m */; };
 		F93EF3371C22688800317AC3 /* EasyObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF3361C22688800317AC3 /* EasyObserver.m */; };
 /* End PBXBuildFile section */
 
@@ -87,8 +86,6 @@
 		F93EF3271C22601300317AC3 /* WindowsInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsInfoView.h; sourceTree = "<group>"; };
 		F93EF3281C22601300317AC3 /* WindowsInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsInfoView.m; sourceTree = "<group>"; };
 		F93EF3291C22601300317AC3 /* WindowsInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowsInfoView.xib; sourceTree = "<group>"; };
-		F93EF32A1C22601300317AC3 /* WindowsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsViewModel.h; sourceTree = "<group>"; };
-		F93EF32B1C22601300317AC3 /* WindowsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsViewModel.m; sourceTree = "<group>"; };
 		F93EF3311C22643800317AC3 /* tabbarTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "tabbarTest-Info.plist"; sourceTree = "<group>"; };
 		F93EF3321C22643800317AC3 /* tabbarTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tabbarTest-Prefix.pch"; sourceTree = "<group>"; };
 		F93EF3351C22688800317AC3 /* EasyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyObserver.h; sourceTree = "<group>"; };
@@ -245,8 +242,6 @@
 				F93EF3271C22601300317AC3 /* WindowsInfoView.h */,
 				F93EF3281C22601300317AC3 /* WindowsInfoView.m */,
 				F93EF3291C22601300317AC3 /* WindowsInfoView.xib */,
-				F93EF32A1C22601300317AC3 /* WindowsViewModel.h */,
-				F93EF32B1C22601300317AC3 /* WindowsViewModel.m */,
 			);
 			path = WindowsView;
 			sourceTree = "<group>";
@@ -360,7 +355,6 @@
 				F93EF3101C22600200317AC3 /* SecondViewController.m in Sources */,
 				F93EF30C1C22600200317AC3 /* tabbarAppDelegate.m in Sources */,
 				F93EF3121C22600200317AC3 /* tabbarViewController.m in Sources */,
-				F93EF32F1C22601300317AC3 /* WindowsViewModel.m in Sources */,
 				F93EF30D1C22600200317AC3 /* tabbarView.m in Sources */,
 				0AABD6501737925F009E541D /* main.m in Sources */,
 				F93EF30E1C22600200317AC3 /* FirstViewController.m in Sources */,
