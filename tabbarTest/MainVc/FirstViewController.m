@@ -28,6 +28,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"演示同步线程加入同步队列(串行队列)造成死锁 永远不会打印任务2和任务3");
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("com.test.concurrent", DISPATCH_QUEUE_CONCURRENT);
+    NSLog(@"        任务111111");
+    dispatch_sync(concurrentQueue, ^{
+        NSLog(@"任务5 同步线程加入并行队列 不会造成死锁");
+    });
+//    dispatch_sync(mainQueue, ^{
+//        NSLog(@"任务22222");
+//    });
+    NSLog(@"任务33333");
+    dispatch_async(mainQueue, ^{
+        NSLog(@"任务4，异步线程加入同步");
+    });
+
     return;
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
