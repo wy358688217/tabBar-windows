@@ -52,4 +52,25 @@
     self.center = CGPointMake(self.center.x, centerY);
 }
 
+-(CGSize)size
+{
+    return self.frame.size;
+}
+
+-(CGPoint)origin
+{
+    return self.frame.origin;
+}
+
+-(CGFloat)getFrameRight
+{
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+-(CGFloat)getFrameBottom
+{
+    return self.frame.origin.y + self.frame.size.height;
+}
+
+
 @end

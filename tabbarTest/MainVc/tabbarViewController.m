@@ -8,6 +8,7 @@
 
 #import "tabbarViewController.h"
 #import "tabbarView.h"
+#import "UIView+Category.h"
 
 #define SELECTED_VIEW_CONTROLLER_TAG 98456345
 
@@ -49,8 +50,7 @@
     
     UIViewController *viewController = data[@"viewController"];
     viewController.view.tag = SELECTED_VIEW_CONTROLLER_TAG;
-    viewController.view.frame = CGRectMake(0,0,self.view.frame.size.width, self.view.frame.size.height- 50);
-    
+    viewController.view.frame = CGRectMake(0,0,self.view.frame.size.width, self.view.frame.size.height- self.tabbar.size.height);
     [self.view insertSubview:viewController.view belowSubview:_tabbar];
 
 }

@@ -4,6 +4,6 @@
 # use_frameworks!
 
 target 'tabbarTest' do
-
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.4.beta'
 end
 
