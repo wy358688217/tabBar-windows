@@ -40,6 +40,12 @@
 		F93EF32D1C22601300317AC3 /* WindowsInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF3281C22601300317AC3 /* WindowsInfoView.m */; };
 		F93EF32E1C22601300317AC3 /* WindowsInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93EF3291C22601300317AC3 /* WindowsInfoView.xib */; };
 		F93EF3371C22688800317AC3 /* EasyObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF3361C22688800317AC3 /* EasyObserver.m */; };
+		F975551C1C2A5059002BB121 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F975551A1C2A5059002BB121 /* ThirdViewController.m */; };
+		F975551D1C2A5059002BB121 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F975551B1C2A5059002BB121 /* ThirdViewController.xib */; };
+		F97555211C2A506C002BB121 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F975551F1C2A506C002BB121 /* ForthViewController.m */; };
+		F97555221C2A506C002BB121 /* ForthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97555201C2A506C002BB121 /* ForthViewController.xib */; };
+		F97555261C2A507B002BB121 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97555241C2A507B002BB121 /* FifthViewController.m */; };
+		F97555271C2A507B002BB121 /* FifthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97555251C2A507B002BB121 /* FifthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +100,15 @@
 		F93EF3321C22643800317AC3 /* tabbarTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tabbarTest-Prefix.pch"; sourceTree = "<group>"; };
 		F93EF3351C22688800317AC3 /* EasyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyObserver.h; sourceTree = "<group>"; };
 		F93EF3361C22688800317AC3 /* EasyObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyObserver.m; sourceTree = "<group>"; };
+		F97555191C2A5059002BB121 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		F975551A1C2A5059002BB121 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		F975551B1C2A5059002BB121 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		F975551E1C2A506C002BB121 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
+		F975551F1C2A506C002BB121 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		F97555201C2A506C002BB121 /* ForthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthViewController.xib; sourceTree = "<group>"; };
+		F97555231C2A507B002BB121 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		F97555241C2A507B002BB121 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		F97555251C2A507B002BB121 /* FifthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FifthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +230,15 @@
 				F93EF2F51C22600200317AC3 /* SecondViewController.h */,
 				F93EF2F61C22600200317AC3 /* SecondViewController.m */,
 				F93EF2F71C22600200317AC3 /* SecondViewController.xib */,
+				F97555191C2A5059002BB121 /* ThirdViewController.h */,
+				F975551A1C2A5059002BB121 /* ThirdViewController.m */,
+				F975551B1C2A5059002BB121 /* ThirdViewController.xib */,
+				F975551E1C2A506C002BB121 /* ForthViewController.h */,
+				F975551F1C2A506C002BB121 /* ForthViewController.m */,
+				F97555201C2A506C002BB121 /* ForthViewController.xib */,
+				F97555231C2A507B002BB121 /* FifthViewController.h */,
+				F97555241C2A507B002BB121 /* FifthViewController.m */,
+				F97555251C2A507B002BB121 /* FifthViewController.xib */,
 				F93EF2F81C22600200317AC3 /* tabbarViewController.h */,
 				F93EF2F91C22600200317AC3 /* tabbarViewController.m */,
 				F93EF2FA1C22600200317AC3 /* tabbarViewController.xib */,
@@ -354,9 +378,12 @@
 				F93EF31F1C22600200317AC3 /* tabbar_mainbtn.png in Resources */,
 				F93EF3141C22600200317AC3 /* Default-568h@2x.png in Resources */,
 				F93EF30F1C22600200317AC3 /* FirstViewController.xib in Resources */,
+				F975551D1C2A5059002BB121 /* ThirdViewController.xib in Resources */,
 				F93EF3161C22600200317AC3 /* Default@2x.png in Resources */,
 				F93EF31E1C22600200317AC3 /* tabbar_4@2x.png in Resources */,
 				F93EF3221C22600200317AC3 /* tabbar_mainbtn_bg@2x.png in Resources */,
+				F97555221C2A506C002BB121 /* ForthViewController.xib in Resources */,
+				F97555271C2A507B002BB121 /* FifthViewController.xib in Resources */,
 				F93EF3111C22600200317AC3 /* SecondViewController.xib in Resources */,
 				F93EF3191C22600200317AC3 /* tabbar_1.png in Resources */,
 				F93EF32E1C22601300317AC3 /* WindowsInfoView.xib in Resources */,
@@ -418,15 +445,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97555261C2A507B002BB121 /* FifthViewController.m in Sources */,
 				F93EF32D1C22601300317AC3 /* WindowsInfoView.m in Sources */,
 				F93EF3101C22600200317AC3 /* SecondViewController.m in Sources */,
 				F93EF30C1C22600200317AC3 /* tabbarAppDelegate.m in Sources */,
 				F93EF3121C22600200317AC3 /* tabbarViewController.m in Sources */,
 				F93EF30D1C22600200317AC3 /* tabbarView.m in Sources */,
 				0AABD6501737925F009E541D /* main.m in Sources */,
+				F975551C1C2A5059002BB121 /* ThirdViewController.m in Sources */,
 				F93EF30E1C22600200317AC3 /* FirstViewController.m in Sources */,
 				213A7A481C253F980057F368 /* UIView+Category.m in Sources */,
 				F93EF3371C22688800317AC3 /* EasyObserver.m in Sources */,
+				F97555211C2A506C002BB121 /* ForthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

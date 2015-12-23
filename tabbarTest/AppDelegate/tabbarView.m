@@ -43,7 +43,8 @@
     [_button_center setFrame:CGRectMake(0, 0, 46, 46)];
     
     _button_center.center =CGPointMake(_tabbarViewCenter.bounds.size.width/2.0, _tabbarViewCenter.bounds.size.height/2.0 + 5) ;
-    
+    [_button_center addTarget:self action:@selector(btn1Click:) forControlEvents:UIControlEventTouchUpInside];
+    [_button_center setTag:103];
     [_tabbarViewCenter addSubview:_button_center];
     
     [self addSubview:_tabbarView];
@@ -68,12 +69,12 @@
     
     _button_3 = [UIButton buttonWithType:UIButtonTypeCustom];
     [_button_3 setFrame:CGRectMake(202, 0, 64, 60)];
-    [_button_3 setTag:103];
+    [_button_3 setTag:104];
     [_button_3 addTarget:self action:@selector(btn1Click:) forControlEvents:UIControlEventTouchUpInside];
     
     _button_4 = [UIButton buttonWithType:UIButtonTypeCustom];
     [_button_4 setFrame:CGRectMake(267, 0, 64, 60)];
-    [_button_4 setTag:104];
+    [_button_4 setTag:105];
     [_button_4 addTarget:self action:@selector(btn1Click:) forControlEvents:UIControlEventTouchUpInside];
     
     [_tabbarView addSubview:_button_1];
@@ -103,11 +104,16 @@
             break;
         }
         case 103:
-            [_tabbarView setImage:[UIImage imageNamed:@"tabbar_3"]];
+            [self.delegate touchBtnAtIndex:2];
             break;
         case 104:
-            [_tabbarView setImage:[UIImage imageNamed:@"tabbar_4"]];
+            [_tabbarView setImage:[UIImage imageNamed:@"tabbar_3"]];
+            [self.delegate touchBtnAtIndex:3];
             break;
+        case 105:
+            [_tabbarView setImage:[UIImage imageNamed:@"tabbar_4"]];
+            [self.delegate touchBtnAtIndex:4];
+           break;
         default:
             break;
     }
