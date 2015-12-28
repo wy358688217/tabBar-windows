@@ -5,5 +5,6 @@
 
 target 'tabbarTest' do
 pod 'UITableView+FDTemplateLayoutCell', '~> 1.4.beta'
+pod 'UMengSocial', '~> 4.4'
 end
 
