@@ -7,31 +7,42 @@
 //
 
 #import "ThirdViewController.h"
+#import "HorizontalProgressBarView.h"
 
 @interface ThirdViewController ()
-
+@property (strong,nonatomic)HorizontalProgressBarView * horizontaView;
+@property (assign, nonatomic)CGFloat miCurrentValue;
 @end
 
 @implementation ThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.horizontaView = [[HorizontalProgressBarView alloc]initProgressImage:[UIImage imageNamed:@"valet_2_loading"]
+                                                                  trackImage:[UIImage imageNamed:@"valet_2_loading_bg"]
+                                                                    withSize:CGSizeMake(225, 15)
+                                                            withCornerRadius:8];
+    self.horizontaView.frame = CGRectMake(0, 200, 225, 15);
+    [self.view addSubview:self.horizontaView];
+//    self.view.backgroundColor = [UIColor grayColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark -- 点击事件
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)onSubtract:(id)sender {
+    self.miCurrentValue -= 0.1;
+    [self.horizontaView setCurrentValue:self.miCurrentValue];
 }
-*/
+
+- (IBAction)onAdd:(id)sender {
+    self.miCurrentValue += 0.05;
+    [self.horizontaView setCurrentValue:self.miCurrentValue];
+}
+
+
 
 @end
