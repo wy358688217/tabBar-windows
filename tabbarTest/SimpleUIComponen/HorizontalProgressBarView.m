@@ -10,41 +10,49 @@
 #import "UIView+Category.h"
 
 @interface HorizontalProgressBarView ()
+@property (strong,nonatomic) UIView * trackV;
+@property (strong,nonatomic) UIView * progressV;
 @property (strong,nonatomic) UIImageView * trackImageV;
 @property (strong,nonatomic) UIImageView * progressImageV;
 @property (assign,nonatomic) CGSize mBarSize;
+@property (assign, nonatomic)ProgressBarType miModelType;
 @end
 
 @implementation HorizontalProgressBarView
 - (instancetype)initProgressImage:(UIImage *)progressImg
                        trackImage:(UIImage *)trackImg
                          withSize:(CGSize)size
-                 withCornerRadius:(CGFloat)value {
+                 withCornerRadius:(CGFloat)value
+                            model:(ProgressBarType)type {
     self = [super init];
     if (self) {
-        self.progressImageV = [[UIImageView alloc] init];
-        self.trackImageV = [[UIImageView alloc] init];
-        self.mBarSize = size;
+        _miModelType = type;
+        _progressImageV = [[UIImageView alloc] init];
+        _trackImageV = [[UIImageView alloc] init];
+        _mBarSize = size;
         
+        [self setSize:size];
         //不让图片拉伸变形
-        CGFloat top = self.mBarSize.height*0.5-1; // 顶端盖高度
+        CGFloat top = self.mBarSize.height*0.5-0.5; // 顶端盖高度
         CGFloat bottom = top ; // 底端盖高度
-        CGFloat left = self.mBarSize.width*0.5-1; // 左端盖宽度
+        CGFloat left = self.mBarSize.width*0.5-0.5; // 左端盖宽度
         CGFloat right = left; // 右端盖宽度
         UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
         // 指定为拉伸模式，伸缩后重新赋值
-        self.progressImageV.image = [progressImg resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
-        self.trackImageV.image = [trackImg resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
-
-        [self addSubview:self.trackImageV];
-        [self addSubview:self.progressImageV];
+        _progressImageV.image = [progressImg resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
+        _trackImageV.image = [trackImg resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
         
-        [self.trackImageV setFrame:CGRectMake(0, 0, self.mBarSize.width, self.mBarSize.height)];
-        [self.progressImageV setZeroOrigin];
-        [self.progressImageV setFrameHeight:self.mBarSize.height];
+        [self addSubview:_trackImageV];
+        [self addSubview:_progressImageV];
         
-        self.progressImageV.layer.cornerRadius = progressImg.size.height*0.5 + 0.5;
-        self.progressImageV.layer.masksToBounds = YES;
+        [_trackImageV setSize:size];
+        [_progressImageV setZeroOrigin];
+        [_progressImageV setFrameHeight:_mBarSize.height];
+        
+        [_trackImageV setCenter:self.center];
+        
+        _progressImageV.layer.cornerRadius = value > 0 ? value :(progressImg.size.height*0.5 + 0.5);
+        _progressImageV.layer.masksToBounds = YES;
     }
     return self;
 }
@@ -52,6 +60,10 @@
 - (void)setCurrentValue:(CGFloat)currentValue {
     CGFloat rate = currentValue > 0.0 ? (currentValue > 1.0) ? 1.0 : currentValue : 0.0;
     CGFloat width = rate * self.mBarSize.width;
-    [self.progressImageV setFrameWidth:width];
+    
+    if (self.miModelType == DrawProgressBarByImage) {
+        [self.progressImageV setFrameWidth:width];
+        return;
+    }
 }
 @end

@@ -17,6 +17,7 @@
 - (void)setFrameHeight:(CGFloat)frame_height;
 - (void)setCenterX:(CGFloat)centerX;
 - (void)setCenterY:(CGFloat)centerY;
+- (void)setSize:(CGSize)size;
 -(CGSize)size;
 -(CGPoint)origin;
 -(CGFloat)getFrameRight;

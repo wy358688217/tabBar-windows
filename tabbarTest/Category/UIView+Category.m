@@ -52,6 +52,11 @@
     self.center = CGPointMake(self.center.x, centerY);
 }
 
+- (void)setSize:(CGSize)size
+{
+    self.frame = CGRectMake(0, 0, size.width, size.height);
+}
+
 -(CGSize)size
 {
     return self.frame.size;
