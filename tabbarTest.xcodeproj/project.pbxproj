@@ -18,6 +18,8 @@
 		21E2165F1C43FC1B000A2BD8 /* valet_2_loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E2165D1C43FC1B000A2BD8 /* valet_2_loading@2x.png */; };
 		21E216631C43FD2C000A2BD8 /* HorizontalProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E216621C43FD2C000A2BD8 /* HorizontalProgressBarView.m */; };
 		21F5DFB01C632918009890B0 /* EasyTimeTaskHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5DFAF1C632918009890B0 /* EasyTimeTaskHolder.m */; };
+		21F5DFB61C633BF1009890B0 /* UIView+HandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5DFB31C633BF1009890B0 /* UIView+HandyAutoLayout.m */; };
+		21F5DFB71C633BF1009890B0 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5DFB51C633BF1009890B0 /* UIView+LayoutMethods.m */; };
 		755632E4CED9EDF186684FA7 /* libPods-tabbarTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DDF8B5A189FFC78F402091 /* libPods-tabbarTest.a */; };
 		F93EF30C1C22600200317AC3 /* tabbarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF2EE1C22600200317AC3 /* tabbarAppDelegate.m */; };
 		F93EF30D1C22600200317AC3 /* tabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F93EF2F01C22600200317AC3 /* tabbarView.m */; };
@@ -72,6 +74,10 @@
 		21F5DFAE1C632918009890B0 /* EasyTimeTaskHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTimeTaskHolder.h; sourceTree = "<group>"; };
 		21F5DFAF1C632918009890B0 /* EasyTimeTaskHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTimeTaskHolder.m; sourceTree = "<group>"; };
 		21F5DFB11C633AD2009890B0 /* SingletonHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonHead.h; sourceTree = "<group>"; };
+		21F5DFB21C633BF1009890B0 /* UIView+HandyAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HandyAutoLayout.h"; sourceTree = "<group>"; };
+		21F5DFB31C633BF1009890B0 /* UIView+HandyAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HandyAutoLayout.m"; sourceTree = "<group>"; };
+		21F5DFB41C633BF1009890B0 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		21F5DFB51C633BF1009890B0 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		25DDF8B5A189FFC78F402091 /* libPods-tabbarTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tabbarTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA2D3D1F39FB17351C8608E /* Pods-tabbarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabbarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-tabbarTest/Pods-tabbarTest.release.xcconfig"; sourceTree = "<group>"; };
 		F93EF2ED1C22600200317AC3 /* tabbarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarAppDelegate.h; sourceTree = "<group>"; };
@@ -193,6 +199,10 @@
 		213A7A3C1C253D080057F368 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				21F5DFB21C633BF1009890B0 /* UIView+HandyAutoLayout.h */,
+				21F5DFB31C633BF1009890B0 /* UIView+HandyAutoLayout.m */,
+				21F5DFB41C633BF1009890B0 /* UIView+LayoutMethods.h */,
+				21F5DFB51C633BF1009890B0 /* UIView+LayoutMethods.m */,
 				213A7A461C253F980057F368 /* UIView+Category.h */,
 				213A7A471C253F980057F368 /* UIView+Category.m */,
 			);
@@ -470,9 +480,11 @@
 			files = (
 				F97555261C2A507B002BB121 /* FifthViewController.m in Sources */,
 				F93EF32D1C22601300317AC3 /* WindowsInfoView.m in Sources */,
+				21F5DFB61C633BF1009890B0 /* UIView+HandyAutoLayout.m in Sources */,
 				21F5DFB01C632918009890B0 /* EasyTimeTaskHolder.m in Sources */,
 				F93EF3101C22600200317AC3 /* SecondViewController.m in Sources */,
 				21E216631C43FD2C000A2BD8 /* HorizontalProgressBarView.m in Sources */,
+				21F5DFB71C633BF1009890B0 /* UIView+LayoutMethods.m in Sources */,
 				2168D7641C609AD500FB920F /* EasyTime.m in Sources */,
 				F93EF30C1C22600200317AC3 /* tabbarAppDelegate.m in Sources */,
 				F93EF3121C22600200317AC3 /* tabbarViewController.m in Sources */,
