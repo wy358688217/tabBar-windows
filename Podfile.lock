@@ -1,13 +1,10 @@
 PODS:
   - UITableView+FDTemplateLayoutCell (1.4.beta)
-  - UMengSocial (4.4)
 
 DEPENDENCIES:
   - UITableView+FDTemplateLayoutCell (~> 1.4.beta)
-  - UMengSocial (~> 4.4)
 
 SPEC CHECKSUMS:
   UITableView+FDTemplateLayoutCell: 9d20bf0518f3c01e42ae614243b97f1161063d27
-  UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
 
 COCOAPODS: 0.39.0

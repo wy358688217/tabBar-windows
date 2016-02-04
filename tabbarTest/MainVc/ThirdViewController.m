@@ -27,7 +27,6 @@
     [_horizontaView setFrameY:200];
     [_horizontaView setCenterX:SCREEN_WIDTH*0.5];
     [self.view addSubview:_horizontaView];
-//    self.view.backgroundColor = [UIColor grayColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,7 +44,5 @@
     self.miCurrentValue += 0.05;
     self.horizontaView.currentValue = self.miCurrentValue;
 }
-
-
 
 @end

@@ -27,6 +27,7 @@
     self = [super init];
     if (self) {
         _miModelType = type;
+        _progressV = [[UIView alloc] init];
         _progressImageV = [[UIImageView alloc] init];
         _trackImageV = [[UIImageView alloc] init];
         _mBarSize = size;
@@ -43,16 +44,19 @@
         _trackImageV.image = [trackImg resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
         
         [self addSubview:_trackImageV];
-        [self addSubview:_progressImageV];
+        [self addSubview:_progressV];
         
         [_trackImageV setSize:size];
+        [_progressV setZeroOrigin];
         [_progressImageV setZeroOrigin];
-        [_progressImageV setFrameHeight:_mBarSize.height];
+        [_progressV setFrameHeight:_mBarSize.height];
+        [_progressImageV setSize:_mBarSize];
+        [_progressV addSubview:_progressImageV];
         
         [_trackImageV setCenter:self.center];
         
-        _progressImageV.layer.cornerRadius = value > 0 ? value :(progressImg.size.height*0.5 + 0.5);
-        _progressImageV.layer.masksToBounds = YES;
+        _progressV.layer.cornerRadius = value > 0 ? value :(progressImg.size.height*0.5 + 0.5);
+        _progressV.layer.masksToBounds = YES;
     }
     return self;
 }
@@ -62,7 +66,7 @@
     CGFloat width = rate * self.mBarSize.width;
     
     if (self.miModelType == DrawProgressBarByImage) {
-        [self.progressImageV setFrameWidth:width];
+        [self.progressV setFrameWidth:width];
         return;
     }
 }
